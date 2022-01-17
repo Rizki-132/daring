@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\KelasController;
+use App\Http\Controllers\UjianController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/kelas',[KelasController::class,'kelas'])->name('kelas')->middleware('auth');
-;
-Route::middleware(['auth:sanctum', 'verified'])->get('/kelas',[KelasController::class,'kelas'])->name('kelas');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/kelas',[KelasController::class,'kelas'])->name('kelas');
+Route::middleware(['auth:sanctum', 'verified'])->get('/ujian',[UjianController::class,'ujian'])->name('ujian');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
