@@ -83,7 +83,7 @@
                     </a>
                 </li>
                 <li class="treeview">
-                    <a href="#">
+                    <a href="{{ route('ujian')}}">
                         <span>Ujian</span>
                     </a>
                 </li>
