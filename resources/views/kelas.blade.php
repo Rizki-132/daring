@@ -83,7 +83,7 @@
                     </a>
                 </li>
                 <li class="treeview">
-                    <a href="#">
+                    <a href="{{ route('ujian')}}">
                         <span>Ujian</span>
                     </a>
                 </li>
@@ -108,6 +108,7 @@
 <section class="content">
     <section class="content-header">
         <div class="container">
+            <h1>Kelas</h1>
            <div class="header">
                <div class="card">   
                 <div class="card text-white bg-success mt-6" !important>
@@ -117,14 +118,38 @@
                                 <div class="alert">
                                     <button class="btn btn-success btn-lg btn-block">Hadir</button>
                                 </div> 
-                            </div>
-                            <div class="card-body">
-                                <div class="alert alert-danger">
-                                    <h5 class="card-title">Success card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content..</p>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="card">
+                                            <table class="table">
+                                                <thead class="thead-dark mb-6">
+                                                  <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">First</th>
+                                                    <th scope="col">Last</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
                                 </div>
-        
-                            </div>
                             </div>
                         </div>
                   </div>
